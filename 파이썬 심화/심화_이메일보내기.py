@@ -45,7 +45,9 @@ smtp = smtplib.SMTP_SSL(SMTP_SERVER,SMTP_PORT)
 # SSL = 아무나 서버에 접근할 수 없도록 막아주는 암호화 방식
 
 smtp.login("cu4149@likelion.org","rkdals050$")
+
 sendEmail("cu4149@likelion.org")
+# 정규표현식으로 유효성 검사 함수 사용
 
 
 smtp.send_message(message)
